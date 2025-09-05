@@ -406,25 +406,74 @@
     </section>
 
     <!-- Social Links Section -->
-    <section class="py-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Connect With Me</h2>
+    <section class="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute top-10 left-10 w-20 h-20 bg-white opacity-5 rounded-full animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-32 h-32 bg-white opacity-5 rounded-full animate-pulse delay-1000"></div>
+            <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-white opacity-5 rounded-full animate-pulse delay-500"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+                    Connect With Me
+                </h2>
+                <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+                    Let's build something amazing together! Reach out through any of these platforms.
+                </p>
+            </div>
             
-            <div class="flex justify-center gap-5">
-                <a id="social-linkedin" href="#" class="social-btn bg-[#0A66C2]" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+                <!-- LinkedIn -->
+                <a id="social-linkedin" href="#" class="group relative" aria-label="LinkedIn">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-[#0077B5] rounded-2xl flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group-hover:bg-[#005885]">
+                        <i class="fab fa-linkedin-in text-white text-xl md:text-2xl"></i>
+                    </div>
+                    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-sm font-medium text-white bg-gray-800 px-2 py-1 rounded">LinkedIn</span>
+                    </div>
                 </a>
-                <a id="social-github" href="#" class="social-btn bg-[#24292F]" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
+                
+                <!-- GitHub -->
+                <a id="social-github" href="#" class="group relative" aria-label="GitHub">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-[#333333] rounded-2xl flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group-hover:bg-[#1a1a1a]">
+                        <i class="fab fa-github text-white text-xl md:text-2xl"></i>
+                    </div>
+                    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-sm font-medium text-white bg-gray-800 px-2 py-1 rounded">GitHub</span>
+                    </div>
                 </a>
-                <a id="social-twitter" href="#" class="social-btn bg-[#1DA1F2]" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
+                
+                <!-- Twitter -->
+                <a id="social-twitter" href="#" class="group relative" aria-label="Twitter">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-[#1DA1F2] rounded-2xl flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group-hover:bg-[#0d8bd9]">
+                        <i class="fab fa-twitter text-white text-xl md:text-2xl"></i>
+                    </div>
+                    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-sm font-medium text-white bg-gray-800 px-2 py-1 rounded">Twitter</span>
+                    </div>
                 </a>
-                <a id="social-email" href="#" class="social-btn bg-gradient-to-r from-pink-500 to-rose-500" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
+                
+                <!-- Email -->
+                <a id="social-email" href="#" class="group relative" aria-label="Email">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group-hover:from-pink-600 group-hover:to-rose-700">
+                        <i class="fas fa-envelope text-white text-xl md:text-2xl"></i>
+                    </div>
+                    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-sm font-medium text-white bg-gray-800 px-2 py-1 rounded">Email</span>
+                    </div>
                 </a>
-                <a id="social-medium" href="#" class="social-btn bg-black" aria-label="Medium">
-                    <i class="fab fa-medium-m"></i>
+                
+                <!-- Medium -->
+                <a id="social-medium" href="#" class="group relative" aria-label="Medium">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-[#00AB6C] rounded-2xl flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group-hover:bg-[#008f5a]">
+                        <i class="fab fa-medium-m text-white text-xl md:text-2xl"></i>
+                    </div>
+                    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-sm font-medium text-white bg-gray-800 px-2 py-1 rounded">Medium</span>
+                    </div>
                 </a>
             </div>
         </div>
@@ -466,7 +515,7 @@
                                 <i class="fas fa-envelope text-blue-500 mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-medium">Email</h4>
-                                    <a href="mailto:agnik@example.com" class="text-blue-500 dark:text-blue-400 hover:underline">agnik@example.com</a>
+                                    <a href="mailto:agnikbishi28@gmail.com" class="text-blue-500 dark:text-blue-400 hover:underline">agnikbishi28@gmail.com</a>
                                 </div>
                             </div>
                             
@@ -476,28 +525,6 @@
                                     <h4 class="font-medium">Location</h4>
                                     <p>Kolkata, India</p>
                                 </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <i class="fas fa-clock text-blue-500 mt-1 mr-4"></i>
-                                <div>
-                                    <h4 class="font-medium">Availability</h4>
-                                    <p>Monday to Friday: 9AM - 5PM</p>
-                                    <p>Weekends: Flexible</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h4 class="font-medium mb-3">Preferred Contact Method</h4>
-                            <div class="flex space-x-4">
-                                <button class="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full flex items-center">
-                                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
-                                </button>
-                                <button class="px-4 py-2 bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-full flex items-center">
-                                    <i class="fas fa-phone-alt mr-2"></i> Call
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -506,20 +533,85 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-8">
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-700">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p>&copy; 2023 Agnik Bishi. All rights reserved.</p>
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand Section -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-gradient mb-4">Agnik Bishi</h3>
+                    <p class="text-gray-400 mb-4">
+                        AI & Software Engineering Enthusiast | B.Tech Student
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        Building innovative solutions with passion and creativity.
+                    </p>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition">Terms of Service</a>
-                    <a href="#" class="hover:text-white transition">Sitemap</a>
+                
+                <!-- Quick Links -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projects</a></li>
+                        <li><a href="#resume" class="text-gray-400 hover:text-white transition-colors duration-300">Resume</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            agnikbishi28@gmail.com
+                        </p>
+                        <p class="text-gray-400 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-map-marker-alt mr-2 text-blue-400"></i>
+                            Kolkata, India
+                        </p>
+                        <p class="text-gray-400 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-graduation-cap mr-2 text-blue-400"></i>
+                            IEM, Kolkata
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="mt-6 text-center text-sm text-gray-500">
-                <p>Made with <i class="fas fa-heart text-red-400"></i> by Agnik Bishi</p>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-700 pt-8">
+                <!-- Social Links -->
+                <div class="flex justify-center mb-6">
+                    <div class="flex space-x-4">
+                        <a id="social-linkedin" href="https://www.linkedin.com/in/agnik-bishi-38357a240/" class="w-10 h-10 bg-[#0077B5] rounded-lg flex items-center justify-center hover:bg-[#005885] transition-colors duration-300 group" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-white text-sm group-hover:scale-110 transition-transform duration-300"></i>
+                        </a>
+                        <a id="social-github" href="https://github.com/JISHUBISHI" class="w-10 h-10 bg-[#333333] rounded-lg flex items-center justify-center hover:bg-[#1a1a1a] transition-colors duration-300 group" aria-label="GitHub">
+                            <i class="fab fa-github text-white text-sm group-hover:scale-110 transition-transform duration-300"></i>
+                        </a>
+                        <a id="social-twitter" href="https://x.com/AgnikBishi" class="w-10 h-10 bg-[#1DA1F2] rounded-lg flex items-center justify-center hover:bg-[#0d8bd9] transition-colors duration-300 group" aria-label="Twitter">
+                            <i class="fab fa-twitter text-white text-sm group-hover:scale-110 transition-transform duration-300"></i>
+                        </a>
+                        <a id="social-email" href="mailto:agnikbishi28@gmail.com" class="w-10 h-10 bg-gradient-to-r from-pink-500 to-rose-500 rounded-lg flex items-center justify-center hover:from-pink-600 hover:to-rose-600 transition-all duration-300 group" aria-label="Email">
+                            <i class="fas fa-envelope text-white text-sm group-hover:scale-110 transition-transform duration-300"></i>
+                        </a>
+                        <a id="social-medium" href="https://medium.com/@agnikbishi28" class="w-10 h-10 bg-[#00AB6C] rounded-lg flex items-center justify-center hover:bg-[#008f5a] transition-colors duration-300 group" aria-label="Medium">
+                            <i class="fab fa-medium-m text-white text-sm group-hover:scale-110 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="text-center">
+                    <p class="text-gray-500 text-sm mb-2">
+                        &copy; 2025 Agnik Bishi. All rights reserved.
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                        Made with <i class="fas fa-heart text-red-400 animate-pulse"></i> by <a href="https://code-fusion-parthib.onrender.com/projects/new" class="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium">CodeFusion</a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
